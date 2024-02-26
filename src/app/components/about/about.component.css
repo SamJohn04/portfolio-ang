@@ -20,12 +20,6 @@ p {
     text-wrap: pretty;
 }
 
-section div {
-    display: flex;
-    align-items: center;
-    padding-bottom: 10rem;
-}
-
 section div > * {
     width: 100%;
 }
