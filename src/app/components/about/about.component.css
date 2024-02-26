@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+section {
+    padding: 3rem 0;
+    width: 100%;
+    min-height: 100vh;
+    width: 95dvw;
+    max-width:900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+section div > * {
+    width: 100%;
+}

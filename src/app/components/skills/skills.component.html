@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let skill of skills">
+        {{skill.name}}
+        <div><div *ngFor="let _ of [].constructor(skill.skill)">&#11088;</div></div>
+    </li>
+</ul>
