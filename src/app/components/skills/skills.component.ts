@@ -1,17 +1,16 @@
-import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [NgFor],
+  imports: [],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
 export class SkillsComponent {
   skills = [{
     name: 'HTML',
-    skill: 3
+    skill: 4
   }, {
     name: 'CSS',
     skill: 4
@@ -25,4 +24,8 @@ export class SkillsComponent {
     name: 'C',
     skill: 3
   }]
+
+  getSkillStarArr(skill: number) {
+    return new Array(skill).map((_, i) => i);
+  }
 }

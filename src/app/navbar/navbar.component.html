@@ -1,4 +1,8 @@
 <nav>
     <span id="name" class="max-md:hidden"><span>Samuel John</span></span>
-    <ul><li *ngFor="let link of links"><a href="{{link.url}}">{{link.name}}</a></li></ul>
+    <ul>
+        @for (link of links; track link.name) {
+            <li><a href="{{link.url}}">{{link.name}}</a></li>
+        }
+    </ul>
 </nav>
